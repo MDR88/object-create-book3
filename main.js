@@ -48,7 +48,7 @@ const financeAdv = Object.create({}, {
             let ticker = {
                 name: stockTicker,
                 amount: qty,
-                price
+                purchase: true
             }
             financeAdv.portfolio.push(ticker);
             console.log(financeAdv.portfolio)
@@ -57,12 +57,12 @@ const financeAdv = Object.create({}, {
     // Sell(non - enumerable, method) - This method takes a stock ticker symbol, a quantity, and a price as arguments
 
     sell: {
-        value: function(stockTicker, qty, price, sell) {
+        value: function(stockTicker, qty, price) {
             let ticker = {
                     name: stockTicker,
                     amount: qty,
                     price,
-                    sell
+                    purchase: false
                 },
 
 
