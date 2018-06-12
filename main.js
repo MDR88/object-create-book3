@@ -66,7 +66,7 @@ const financeAdv = Object.create({}, {
                 },
 
 
-        }
+        },
 
     }
 });
